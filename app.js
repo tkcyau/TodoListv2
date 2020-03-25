@@ -15,7 +15,7 @@ mongoose.set('useFindAndModify', false);
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-tim:test123@cluster0-ng87q.mongodb.net/todolistDB", {
+mongoose.connect("mongodb://localhost:27017/blogDB", {
   useUnifiedTopology: true,
   useNewUrlParser: true
 });
